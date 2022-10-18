@@ -8,16 +8,16 @@ public class CoffeeServiceImpl implements CoffeeService {
     private String type;
 
     @Override
-    public Coffee getCoffeeByPrice(double price) {
+    public Coffee getCoffeeByPrice(String price) {
 
-        if (price == 170) {
+        if (price.equals("170")) {
             type = "Капучино";
-        } else if (price == 180) {
+        } else if (price.equals("180")) {
             type = "Латте";
-        } else if (price == 100) {
+        } else if (price.equals("100")) {
             type = "Эспрессо";
         } else {
-            System.out.println("Коффе по указанной цене НЕТ!!!");
+            System.out.println("Кофе по указанной цене НЕТ!!!");
         }
 
         return new Coffee(type);
