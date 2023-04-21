@@ -32,7 +32,8 @@ public class CoffeeHouseImpl implements CoffeeHouse {
             } else {
                 System.out.println("Кофе по указанной цене НЕТ!!!");
                 System.out.println("Попробуйте заново");
-                System.out.println("=========================");
+                System.out.println("Введите корректную стоимость");
+                System.out.println("============================");
                 printMenu();
                 System.out.println("Оплатите выбранный кофе");
                 price = ioService.input();
